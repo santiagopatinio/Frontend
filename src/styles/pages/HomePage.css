@@ -1,0 +1,147 @@
+
+
+#a{
+    background-image: linear-gradient(to bottom, #010e2969, #010e29), url(https://ise.com.ar/wp-content/uploads/2020/10/ISE-Savio-Electronica-scaled.jpg);
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    background-size: cover;
+
+    background-color: #010e29;
+
+    width: 98.9vw;
+    height: 100vh;
+    z-index: 900;
+}
+
+#infoInicio {
+    padding-left: 10%;    
+    padding-top: 14%;
+    height: 67%;
+
+    color: white;
+    font-family: system-ui;
+    font-weight: lighter;
+}
+
+#infoInicio h1{
+    font-size: 4.5vw;
+    line-height: 100%;
+}
+
+#infoInicio p{
+    font-size: 2vw;
+    line-height: 50%;
+}
+
+#infoInicio button {
+    align-items: center;
+    appearance: none;
+    background-color: transparent;
+    
+    width: 15vw;
+    height: 7vh;
+    padding: 0px; 
+    margin-right: 1%;
+    justify-content: center;
+
+    border-radius: 24px;
+    border-style:groove;
+    border-color: white;
+
+    color: white;
+    font-family: system-ui;
+    font-size: 100%;
+}
+
+
+#contacto {
+    width: 100%;
+    height: 66vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: #010e29;
+    overflow: hidden;
+    color: white;
+    font-family: system-ui;
+    font-weight: lighter;
+    display: flex;
+}
+
+#info{
+    width: 50%;
+    height: 10vh;
+    float: left;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+
+iframe{
+    float: right;
+    margin-top: 5%;
+    margin-right: 3%;
+    margin-left: 3%;
+    width: 60vw;
+    height: 50vh;
+    border:0;
+}
+
+#info h1{
+    font-size: 3vw;
+}
+#info p{
+    font-size: 1.5vw;
+    line-height: 140%;
+    text-align: right;
+    margin-top: 12%;
+}
+
+.slider {
+    width: 100%;
+    background-color: #010e29;
+    color: white;
+    font-family: system-ui;
+    font-weight: lighter;
+    text-align: center;
+}
+.slider h1{
+    color: #01c4ff;
+    font-size: 2.5vw;
+}
+.slider p{
+    font-size: 1.5vw;
+    line-height: 50%;
+}
+
+.slider #botonInfo:hover{
+    border-color:  #01c4ff;
+}
+#infoInicio button:hover{
+    border-color:  #01c4ff;
+}
+
+.slider #botonInfo{
+    align-items: center;
+    appearance: none;
+    background-color: transparent;
+    
+    width: 6vw;
+    height: 5vh;
+    padding: 0px; 
+    justify-content: center;
+
+    border-radius: 24px;
+    border-style:groove;
+    border-color: white;
+
+    color: white;
+    font-family: system-ui;
+    font-size: 100%;
+}
+
+@media screen and (max-width: 200px) {
+    #a{
+        width: 100vw;
+    }
+}
+
