@@ -23,7 +23,7 @@ export default function Router() {
     return (
         <HashRouter>
             <Routes>
-                <Route path='/' element={ <Navbar /> }>
+                <Route path='/#/' element={ <Navbar /> }>
                         <Route index element={ <HomePage /> } />
                         <Route path="/login" element= { <LoginPage /> } />
                         <Route path="/inscripcion" element= { <HomePage /> } />
