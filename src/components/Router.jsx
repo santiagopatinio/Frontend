@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import LoginPage from "../pages/Login"
 import HomePage from "../pages/HomePage"
 import Info from "../pages/InfoInstitucional"
@@ -21,8 +21,8 @@ import { Switch } from "@mui/material"
 
 export default function Router() {
     return (
-        <BrowserRouter>
-            <Routes>
+        <HashRouter>
+            <Routes path='/#'>
                 <Route path='/' element={ <Navbar /> }>
                         <Route index element={ <HomePage /> } />
                         <Route path="/login" element= { <LoginPage /> } />
@@ -40,6 +40,6 @@ export default function Router() {
                         <Route path="/secretario/alumno/:id" element= { <SecretarioPage origen ={2}/> } />
                     <Route path="/admin" element= { <AdminPage /> } />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
