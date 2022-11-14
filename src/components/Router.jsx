@@ -23,22 +23,22 @@ export default function Router() {
     return (
         <HashRouter>
             <Routes>
-                <Route path='/#/' element={ <Navbar /> }>
+                <Route exact path='/' element={ <Navbar /> }>
                         <Route index element={ <HomePage /> } />
-                        <Route path="/login" element= { <LoginPage /> } />
-                        <Route path="/inscripcion" element= { <HomePage /> } />
-                        <Route path="/informacion" element= { <Info /> } />    
-                        <Route path="/cursos" element= { <Cursoshomepage /> } />  
-                        <Route path="/carrera" element= { <Carrerahomepage /> } />                            
+                        <Route exact path="/login" element= { <LoginPage /> } />
+                        <Route exact path="/inscripcion" element= { <HomePage /> } />
+                        <Route exact path="/informacion" element= { <Info /> } />    
+                        <Route exact path="/cursos" element= { <Cursoshomepage /> } />  
+                        <Route exact path="/carrera" element= { <Carrerahomepage /> } />                            
                 </Route>
-                    <Route path="/alumno" element= { <AlumnoPage/> } />
-                        <Route path="/alumno/curso" element= { <CursoAlumnoPage /> } />
-                    <Route path="/profesor" element= { <ProfesorPage /> } />
-                        <Route path="/profesor/curso" element= { <CursoProfesorPage /> } />
-                        <Route path="/profesor/curso/alumno" element= { <AlumnoControlPage /> } />
-                    <Route path="/secretario" element= { <SecretarioPage /> } />
-                        <Route path="/secretario/alumno/:id" element= { <SecretarioPage origen ={2}/> } />
-                    <Route path="/admin" element= { <AdminPage /> } />
+                    <Route exact path="/alumno" element= { <AlumnoPage/> } />
+                        <Route exact path="/alumno/curso" element= { <CursoAlumnoPage /> } />
+                    <Route exact path="/profesor" element= { <ProfesorPage /> } />
+                        <Route exact path="/profesor/curso" element= { <CursoProfesorPage /> } />
+                        <Route exact path="/profesor/curso/alumno" element= { <AlumnoControlPage /> } />
+                    <Route exact path="/secretario" element= { <SecretarioPage /> } />
+                        <Route exact path="/secretario/alumno/:id" element= { <SecretarioPage origen ={2}/> } />
+                    <Route exact path="/admin" element= { <AdminPage /> } />
             </Routes>
         </HashRouter>
     )
