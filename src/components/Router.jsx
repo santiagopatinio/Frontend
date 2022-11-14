@@ -22,7 +22,7 @@ import { Switch } from "@mui/material"
 export default function Router() {
     return (
         <HashRouter>
-            <Routes path='/#'>
+            <Routes>
                 <Route path='/' element={ <Navbar /> }>
                         <Route index element={ <HomePage /> } />
                         <Route path="/login" element= { <LoginPage /> } />
