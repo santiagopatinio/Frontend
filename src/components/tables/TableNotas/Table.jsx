@@ -238,12 +238,12 @@ export default function TableNotas(props) {
 	return (
 		<div style={{ height: "66vh", width: '100%' }}>
 
-			<div style={{ width: '100%' }}>
+			<div id='botones' style={{ width: '100%' }}>
 				<IconButton color="primary" aria-label="ir para atras" onClick={() => { window.history.go(-1); return false; }}>
 					<ArrowBackRoundedIcon fontSize='large' />
 				</IconButton>
 				<IconButton color="primary" aria-label="crear fila" onClick={() => { handleNewRow() }}>
-					<CreateIcon id='crearEvaluacion' fontSize='large' />
+					<CreateIcon fontSize='large' />
 				</IconButton>
 			</div>
 
