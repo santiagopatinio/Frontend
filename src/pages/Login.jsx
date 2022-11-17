@@ -142,6 +142,8 @@ export default function SignIn() {
                                 }}
                             />
                             <Button
+                                id='ingresar'
+                                name='ingresar'
                                 type="submit"
                                 fullWidth
                                 variant="contained"
