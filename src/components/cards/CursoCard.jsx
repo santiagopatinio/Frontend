@@ -19,7 +19,7 @@ export default function cursoCard({ nombre, id, dni }) {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button LinkComponent={Link} to={`curso`} state={{idCurso : id, dni : dni}} size="small">Ir a curso</Button>
+                    <Button id={nombre} LinkComponent={Link} to={`curso`} state={{idCurso : id, dni : dni}} size="small">Ir a curso</Button>
                 </CardActions>
             </Card>
         </Grid>

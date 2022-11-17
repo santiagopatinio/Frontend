@@ -242,7 +242,7 @@ export default function TableNotas(props) {
 				<IconButton color="primary" aria-label="ir para atras" onClick={() => { window.history.go(-1); return false; }}>
 					<ArrowBackRoundedIcon fontSize='large' />
 				</IconButton>
-				<IconButton color="primary" aria-label="crear fila" onClick={() => { handleNewRow() }}>
+				<IconButton id='crearEvaluacion' color="primary" aria-label="crear fila" onClick={() => { handleNewRow() }}>
 					<CreateIcon fontSize='large' />
 				</IconButton>
 			</div>

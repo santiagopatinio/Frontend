@@ -11,7 +11,7 @@ export default function Hub() {
                 <h1>Instituto Manuel Savio</h1>
                 <p>Carrera de Técnico Superior en electrónica</p>
                 <p>Título Oficial de validez Nacional</p>
-                <a href='/carrera'><button>CARRERA</button></a>
+                <a href='/carrera' id='carreras'><button id='carrera'>CARRERA</button></a>
                 <a href='/cursos'><button>CURSOS</button></a>
             </div>
             
