@@ -239,13 +239,12 @@ export default function TableNotas(props) {
 		<div style={{ height: "66vh", width: '100%' }}>
 
 			<div style={{ width: '100%' }}>
-				<IconButton color="primary" aria-label="ir para atras" onClick={() => { window.history.go(-1); return false; }}>
+				<Button color="primary" aria-label="ir para atras" onClick={() => { window.history.go(-1); return false; }}>
 					<ArrowBackRoundedIcon fontSize='large' />
-				</IconButton>
-				<Button id='crearEvaluacion' color="primary" aria-label="crear fila" onClick={() => { handleNewRow() }}>
-					<CreateIcon fontSize='large' />
 				</Button>
-
+				<button id='crearEvaluacion' color="primary" aria-label="crear fila" onClick={() => { handleNewRow() }}>
+						
+				</button>
 			</div>
 
 			<div style={{ height: '90%' }}>
