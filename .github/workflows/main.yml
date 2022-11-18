@@ -22,4 +22,5 @@ jobs:
           local-testing: start
           local-identifier: random
       - run: pip3 install selenium
+      - run: pip3 install python-dotenv
       - run: python3 test.py
