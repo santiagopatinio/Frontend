@@ -1,0 +1,25 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 'BrowserStack Env Setup'
+        uses: 'browserstack/github-actions/setup-env@master'
+        with:
+          username:  ${{ secrets.BROWSERSTACK_USERNAME }}
+          access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+          project-name: 'test-selenium'
+      - name: 'BrowserStack Local Tunnel Setup'  # Invokes the setup-local action
+        uses: browserstack/github-actions/setup-local@master
+        with:
+          local-testing: start
+          local-identifier: random
+      - run: pip3 install selenium
+      - run: python3 test.py
