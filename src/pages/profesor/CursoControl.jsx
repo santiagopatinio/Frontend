@@ -306,7 +306,7 @@ export default function CursoCard() {
                     <IconButton color="primary" aria-label="ir para atras" onClick={() => { window.location.href = "/profesor/curso" }}>
                         <ArrowBackRoundedIcon fontSize='large' />
                     </IconButton>
-                    <IconButton color="primary" aria-label="crear fila" onClick={() => { handleNewRow() }}>
+                    <IconButton id='crearEvaluacion' color="primary" aria-label="crear fila" onClick={() => { handleNewRow() }}>
                         <CreateIcon fontSize='large' />
                     </IconButton>
                 </div>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useEffect, useState, useRef } from "react";
 import { useLocation } from "react-router-dom"
-import { Card, CardActions, CardContent, Grid, Skeleton, Container, Button } from "@mui/material";
+import { Card, CardActions, CardContent, Grid, Skeleton, Container } from "@mui/material";
 import { DataGrid, gridPageCountSelector, gridPageSelector, useGridApiContext, useGridSelector } from '@mui/x-data-grid';
 import Pagination from '@mui/material/Pagination';
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
@@ -238,13 +238,13 @@ export default function TableNotas(props) {
 	return (
 		<div style={{ height: "66vh", width: '100%' }}>
 
-			<div style={{ width: '100%' }}>
-				<Button color="primary" aria-label="ir para atras" onClick={() => { window.history.go(-1); return false; }}>
+			<div id='botones' style={{ width: '100%' }}>
+				<IconButton color="primary" aria-label="ir para atras" onClick={() => { window.history.go(-1); return false; }}>
 					<ArrowBackRoundedIcon fontSize='large' />
-				</Button>
-				<button id='crearEvaluacion' color="primary" aria-label="crear fila" onClick={() => { handleNewRow() }}>
-						
-				</button>
+				</IconButton>
+				<IconButton color="primary" aria-label="crear fila" onClick={() => { handleNewRow() }}>
+					<CreateIcon fontSize='large' />
+				</IconButton>
 			</div>
 
 			<div style={{ height: '90%' }}>
